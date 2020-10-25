@@ -1,0 +1,72 @@
+{
+	"output_file": "settings.json",
+	"OpenReadMe": {
+		"type": "button",
+		"label": "Open README.txt",
+		"tooltip": "Opens the README.txt for this script",
+		"function": "OpenReadMe",
+		"wsevent": "",
+		"group": "General"
+	},
+	"CommandName": {
+		"type": "textbox",
+		"value": "!playtime",
+		"label": "Command Name",
+		"tooltip": "How users will call the command.",
+		"group": "General"
+	},
+	"Response": {
+		"type": "textbox",
+		"value": "{channel_name} has played {time_played} of {game_name}.",
+		"label": "Message",
+		"tooltip": "The message sent when a user calls the command. Args: {channel_name} {time_played} {game_name}",
+		"group": "General"
+	},
+	"TimeUnit": {
+		"type": "dropdown",
+		"label": "Time Unit",
+		"value": "Hours",
+		"tooltip": "Units of time to display playtime.",
+		"items": [
+			"Minutes",
+			"Hours",
+			"Days"
+		],
+		"group": "General"
+},
+	"Cooldown": {
+		"type": "numberbox",
+		"value": "30",
+		"label": "Cooldown (seconds)",
+		"tooltip": "Minimum seconds before the command can be called again.",
+		"group": "General"
+	},
+	"GameName": {
+		"type": "textbox",
+		"value": "",
+		"label": "Game Name",
+		"tooltip": "The name of the game being played.",
+		"group": "Game Settings"
+	},
+	"GameID": {
+		"type": "textbox",
+		"value": "",
+		"label": "Game ID",
+		"tooltip": "The game ID as determined by Steam.",
+		"group": "Game Settings"
+	},
+	"SteamID": {
+		"type": "textbox",
+		"value": "",
+		"label": "Steam ID",
+		"tooltip": "Your personal 64-bit Steam ID.",
+		"group": "Steam Settings"
+	},
+	"SteamAPIKey": {
+		"type": "textbox",
+		"value": "",
+		"label": "Steam API Key",
+		"tooltip": "Your personal Steam API Key. DO NOT SHARE WITH ANYONE",
+		"group": "Steam Settings"
+	}
+}
